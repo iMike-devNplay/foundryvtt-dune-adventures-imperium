@@ -1,0 +1,33 @@
+{
+    "name": "dune-adventures-imperium",
+    "title": "Dune : Aventures dans l'Impérium",
+    "description": "",
+    "version": "0.0.1",
+    "templateVersion": 2,
+    "author": "Michael Schneider",
+    "minimumCoreVersion": "0.8.4",
+    "compatibleCoreVersion": "0.8.9",
+    "esmodules": ["module/dune.mjs"],
+    "styles": ["styles/dune.css"],
+    "scripts": [],
+    "packs": [],
+    "languages": [
+      {
+        "lang": "en",
+        "name": "English",
+        "path": "lang/en.json"
+      },
+      {
+        "lang": "fr",
+        "name": "Français",
+        "path": "lang/fr.json"
+      }
+    ],
+    "gridDistance": 5,
+    "gridUnits": "m",
+    "primaryTokenAttribute": "force",
+    "secondaryTokenAttribute": "",
+    "url": "https://github.com/iMike-devNplay/foundryvtt-dune-adventures-imperium/",
+    "license": "LICENSE.txt"
+  }
+  
