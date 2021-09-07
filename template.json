@@ -1,0 +1,40 @@
+{
+    "Actor": {
+      "types": ["agent"],
+      "templates": {
+          "attributes":{
+              "force": {
+                  "value": 0
+                }
+            }
+        },
+      "agent": {
+        "templates": ["attributes"]
+        }
+    },
+    "Item": {
+      "types": ["weapon", "item"],
+      "weapon": {
+        "mode": "",
+        "range": "",
+        "dice": "",
+        "accuracy": "",
+        "damage": "",
+        "dual": false,
+        "trait1": "",
+        "trait2": "",
+        "description": "",
+        "isWeapon": true,
+        "isOwned": false,
+        "assignedSlot": ""
+      },
+      "item": {
+        "description": "",
+        "isItem": true,
+        "isOwned": false,
+        "assignedSlot": ""
+      }
+    }
+  }
+    
+  

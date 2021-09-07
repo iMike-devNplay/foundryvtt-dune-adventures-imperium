@@ -1,0 +1,13 @@
+{
+    "name": "dune-adventure-imperium",
+    "version": "1.0.0",
+    "description": "Dune : Adventure Imperium RPG",
+    "browserslist": [
+      "last 3 versions"
+    ],
+    "author": "Michael Schneider",
+    "license": "GNU",
+    "private": true,
+    "devDependencies": {}
+  }
+  
