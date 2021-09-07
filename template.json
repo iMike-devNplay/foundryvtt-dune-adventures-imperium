@@ -1,38 +1,177 @@
 {
     "Actor": {
-      "types": ["agent"],
+      "types": ["character", "minor", "notable", "major"],
       "templates": {
-          "attributes":{
-              "force": {
-                  "value": 0
-                }
-            }
+        "bio": {
+          "name": "",
+          "house": "",
+          "role": "",
+          "faction": "",
+          "personality": "",
+          "appearance": "",
+          "relationships": ""
         },
-      "agent": {
-        "templates": ["attributes"]
-        }
+        "skills":{
+            "battle": {
+              "label": "Battle",
+              "description": "Description",
+              "minValue": 4,
+              "maxValue": 8,
+              "value": 4,
+              "focuses": []
+            },
+            "communicate": {
+                "label": "Communicate",
+                "description": "Description",
+                "minValue": 4,
+                "maxValue": 8,
+                "value": 4,
+                "focuses": []
+            },
+            "discipline": {
+                "label": "Discipline",
+                "description": "Description",
+                "minValue": 4,
+                "maxValue": 8,
+                "value": 4,
+                "focuses": []
+            },
+            "move": {
+                "label": "Move",
+                "description": "Description",
+                "minValue": 4,
+                "maxValue": 8,
+                "value": 4,
+                "focuses": []
+            },
+            "understand": {
+                "label": "Understand",
+                "description": "Description",
+                "minValue": 4,
+                "maxValue": 8,
+                "value": 4,
+                "focuses": []
+              }
+          },
+          "drives": {
+            "duty": {
+              "label": "Duty",
+              "description": "Description",
+              "minValue": 4,
+              "maxValue": 8,
+              "value": 4,
+              "statements": ""
+            },
+            "faith": {
+              "label": "Faith",
+              "description": "Description",
+              "minValue": 4,
+              "maxValue": 8,
+              "value": 4,
+              "statements": ""
+            },
+            "justice": {
+              "label": "Justice",
+              "description": "Description",
+              "minValue": 4,
+              "maxValue": 8,
+              "value": 4,
+              "statements": ""
+            },
+            "power": {
+              "label": "Power",
+              "description": "Description",
+              "minValue": 4,
+              "maxValue": 8,
+              "value": 4,
+              "statements": ""
+            },
+            "truth": {
+              "label": "Truth",
+              "description": "Description",
+              "minValue": 4,
+              "maxValue": 8,
+              "value": 4,
+              "statements": ""
+            }
+          }
+        },
+      "character": {
+        "templates": ["bio", "skills", "drives"],
+        "advancementPoints": 0,
+        "determination": 0,
+        "traits": {
+          "first": "",
+          "second": "",
+          "third": ""
+        },
+        "archetype": "",
+        "ambition": {
+          "description": "",
+          "drive": ""
+        },
+        "talents": [],
+        "assets": []
+      },
+      "minor":
+      {
+        "templates": ["bio", "skills", "drives"],
+        "trait": ""
+      },
+      "notable":
+      {
+        "templates": ["bio", "skills", "drives"],
+        "traits": {
+          "first": "",
+          "second": ""
+        },
+        "talents": []
+      },
+      "major":
+      {
+        "templates": ["bio", "skills", "drives"],
+        "traits": {
+          "first": "",
+          "second": "",
+          "third": ""
+        },
+        "talents": []
+      }
     },
     "Item": {
-      "types": ["weapon", "item"],
-      "weapon": {
-        "mode": "",
-        "range": "",
-        "dice": "",
-        "accuracy": "",
-        "damage": "",
-        "dual": false,
-        "trait1": "",
-        "trait2": "",
-        "description": "",
-        "isWeapon": true,
-        "isOwned": false,
-        "assignedSlot": ""
-      },
+      "types": ["item", "talent", "archetype", "asset"],
       "item": {
         "description": "",
         "isItem": true,
-        "isOwned": false,
-        "assignedSlot": ""
+        "isOwned": false
+      },
+      "talent": {
+        "description": "",
+        "isTalent": true,
+        "isOwned": false
+      },
+      "archetype": {
+        "label": "",
+        "trait": "",
+        "focuses": [],
+        "talents": [],
+        "drives": [],
+        "description": "",
+        "primarySkill": "",
+        "secondarySkill": "",
+        "isArchetype": true,
+        "isOwned": false
+      },
+      "asset": {
+        "label": "",
+        "isPersonal": false,
+        "isWarfare": false,
+        "isEspionage": false,
+        "isIntrigue": false,
+        "category": "",
+        "asAnAsset":"",
+        "keywords": [],
+        "quality": 0
       }
     }
   }
